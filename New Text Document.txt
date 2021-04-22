@@ -1,0 +1,142 @@
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a=3;
+        int b=4;
+        Console.WriteLine(a+b);
+        Console.WriteLine(a-b);
+        Console.WriteLine(a/b);
+        Console.WriteLine(a*b);
+    }
+}
+
+
+
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string name = "guna";
+        int age = 22;
+        char gender ='M';
+        float precent = 78.34F;
+        Console.WriteLine("Name: {0}",name);
+        Console.WriteLine("age: {0}",age);
+        Console.WriteLine("gender: {0}",gender);
+        Console.WriteLine("percentage: {0}",precent);
+        
+    }
+
+
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       int firstNumber,secondNumber,result;
+        Console.WriteLine("Enter firstNumber :");
+        firstNumber = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter secondtNumber :");
+        secondNumber = Convert.ToInt32(Console.ReadLine());
+        result = firstNumber + secondNumber;
+        Console.WriteLine("sum of two numbers:"+result);
+        Console.ReadLine();
+    }
+}
+
+
+
+
+}
+
+
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+       int AGE;
+       Console.WriteLine("Enter AGE :");
+       AGE = Convert.ToInt32(Console.ReadLine());
+       if (AGE >18)
+       {
+           Console.WriteLine(AGE + "person is elgibel to vote");
+       }
+       else
+       {
+            Console.WriteLine(AGE + "person is not elgibel to vote");
+       }
+    }
+
+using System.IO;
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int age;
+        Console.Write("Enter an age: "); 
+        age=Convert.ToInt32(Console.ReadLine());
+        
+        if(age<18)
+        {
+          Console.Write("voter is not eligible ");   
+        }
+        else if(age>=60)
+        {
+         Console.Write("voter is a senior citizen ");      
+        }
+        else
+        {
+         Console.Write("voter is  eligible ");      
+        }
+        
+    }
+}
+using System.IO;
+using System;
+
+
+
+class Program
+{
+static void Main()
+{
+int[,] arr= new int[2,2];
+Console.WriteLine("Enter the elements");
+for(int row=0;row < arr.GetLength(0);row++)
+{
+for (int col=0;col < arr.GetLength(1);col++)
+{
+arr[row,col]=Convert.ToInt32(Console.ReadLine());
+}
+
+}
+for (int row=0;row < arr.GetLength(0);row++)
+{
+for (int col=0;col < arr.GetLength(1);col++)
+{
+Console.Write(arr[row,col]+ "\t");
+}
+Console.Write("\n");
+}
+
+}
+}
+
+
+
+
+}
